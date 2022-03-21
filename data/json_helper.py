@@ -41,5 +41,5 @@ data = {
     'final_smash': 'Final Snap'
 }
 
-new_file = open('data/marvel/ironman.json', 'w')
-    json.dump(data, new_file)
+new_file = open('/Users/jason/dev/Python9Ex/data/marvel/ironman.json', 'w')
+json.dump(data, new_file)
