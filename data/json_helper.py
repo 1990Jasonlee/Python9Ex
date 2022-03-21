@@ -31,3 +31,15 @@ def load_pickle(path):
     return data
 
 print(load_pickle('super_smash_characters.pickle'))
+
+data = {
+    'name': 'Iron Man',
+    'neutral_special': 'Call Jarvis',
+    'side_special': 'Ark Reactor',
+    'up_special': 'Hulk Buster',
+    'down_special': 'Pew Pew Pew',
+    'final_smash': 'Final Snap'
+}
+
+new_file = open('data/marvel/ironman.json', 'w')
+    json.dump(data, new_file)
