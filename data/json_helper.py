@@ -1,9 +1,13 @@
 import os
 import json
+import pickle
+
+
 def read_json(path):
     open_json = open(path)
     json_object = json.load(open_json)
     return json_object
+
 
 def read_all_json_files(path):
     json_list = []
@@ -14,6 +18,13 @@ def read_all_json_files(path):
                 json_list.append(result)
     return json_list
 
+
 def write_pickle(path):
     new_file = open('super_smash_characters.pickle', 'wb')
+    pickle.dump(path, new_file)
 
+
+def load_pickle(path):
+    load_file = open(path, 'rb')
+    data = pickle.load(load_file)
+    return data
