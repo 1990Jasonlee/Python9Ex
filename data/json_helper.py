@@ -14,3 +14,6 @@ def read_all_json_files(path):
                 json_list.append(result)
     return json_list
 
+def write_pickle(path):
+    new_file = open('super_smash_characters.pickle', 'wb')
+
