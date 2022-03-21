@@ -23,8 +23,11 @@ def write_pickle(path):
     new_file = open('super_smash_characters.pickle', 'wb')
     pickle.dump(path, new_file)
 
+write_pickle('/Users/jason/dev/Python9Ex/data')
 
 def load_pickle(path):
     load_file = open(path, 'rb')
     data = pickle.load(load_file)
     return data
+
+print(load_pickle('super_smash_characters.pickle'))
